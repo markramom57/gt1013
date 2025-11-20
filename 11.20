@@ -1,0 +1,24 @@
+import random
+import time
+
+phrases = [
+    "Be nice to me, I have root access",
+    "This code has no bugs, only random features",
+    "Works on my machine™",
+    "Have you tried turning it off and on again?",
+    "It's not a bug, it's a feature request",
+    "Segmentation fault (core dumped... my soul)",
+    "99 bugs in the code, take one down, patch it around... 127 bugs in the code",
+    "Real programmers count from 0",
+    "I swear it worked yesterday",
+    "There is no cloud, it's just someone else's computer"
+]
+
+print("Random Dev Wisdom Generator (Ctrl+C to stop)\n")
+
+try:
+    while True:
+        print(f"\033[95m> {random.choice(phrases)}\033[0m")
+        time.sleep(2)
+except KeyboardInterrupt:
+    print("\n\033[91mFine, go touch some grass.\033[0m")
